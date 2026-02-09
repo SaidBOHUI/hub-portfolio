@@ -49,12 +49,12 @@ export const sites: Site[] = [
     tags: ["Socket.io", "React", "MongoDB"],
   },
   {
-    title: "Task Manager CLI",
-    description: "Outil CLI pour gérer ses tâches avec export JSON et filtres.",
-    url: "https://task-cli.example.com",
-    github: "https://github.com/username/task-cli",
+    title: "Photobooth",
+    description: "Site Vitrine pour un prestataire de service de photobooth pour évènnements",
+    url: "https://photobooth.sbohui.fr",
+    github: "https://github.com/SaidBOHUI/photobooth",
     screenshot: "/screenshots/placeholder-6.svg",
-    tags: ["Python", "Click", "SQLite"],
+    tags: ["React", "Typescript", "Tailwind"],
   },
 ];
 
