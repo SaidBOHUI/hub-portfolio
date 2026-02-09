@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="0" fill="url(#bg1)"/>
+  <rect x="40" y="40" width="720" height="36" rx="8" fill="rgba(255,255,255,0.15)"/>
+  <circle cx="64" cy="58" r="6" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="84" cy="58" r="6" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="104" cy="58" r="6" fill="rgba(255,255,255,0.2)"/>
+  <rect x="40" y="100" width="200" height="360" rx="12" fill="rgba(255,255,255,0.08)"/>
+  <rect x="260" y="100" width="500" height="170" rx="12" fill="rgba(255,255,255,0.08)"/>
+  <rect x="260" y="290" width="240" height="170" rx="12" fill="rgba(255,255,255,0.08)"/>
+  <rect x="520" y="290" width="240" height="170" rx="12" fill="rgba(255,255,255,0.08)"/>
+  <text x="400" y="260" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="system-ui" font-size="20" font-weight="600">Dashboard</text>
+</svg>

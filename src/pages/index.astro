@@ -1,11 +1,133 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import SiteCard from "../components/SiteCard.astro";
+import { sites, profile } from "../data/sites";
 ---
 
 <Layout>
-	<Welcome />
+  <Header />
+
+  <main>
+    <section class="hero">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        {sites.length} projets en ligne
+      </div>
+      <h2>{profile.description}</h2>
+    </section>
+
+    <section class="grid-section">
+      <div class="grid">
+        {sites.map((site, i) => (
+          <SiteCard site={site} index={i} />
+        ))}
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Déployé sur <span class="mono">Hetzner</span> via <span class="mono">Coolify</span>
+        <span class="separator">·</span>
+        Built with <span class="mono">Astro</span>
+      </p>
+    </footer>
+  </main>
 </Layout>
+
+<style>
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    padding: 4rem 0 2.5rem;
+    text-align: center;
+    animation: fadeUp 600ms ease-out both;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.35rem 0.9rem;
+    font-size: 0.78rem;
+    font-weight: 500;
+    font-family: var(--font-mono);
+    color: hsl(var(--muted-foreground));
+    background: hsl(var(--muted));
+    border: 1px solid hsl(var(--border));
+    border-radius: 999px;
+    margin-bottom: 1.25rem;
+  }
+
+  .pulse {
+    width: 7px;
+    height: 7px;
+    background: hsl(142 71% 45%);
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 hsl(142 71% 45% / 0.4);
+    animation: pulse-ring 2s ease-out infinite;
+  }
+
+  @keyframes pulse-ring {
+    0% { box-shadow: 0 0 0 0 hsl(142 71% 45% / 0.4); }
+    70% { box-shadow: 0 0 0 8px hsl(142 71% 45% / 0); }
+    100% { box-shadow: 0 0 0 0 hsl(142 71% 45% / 0); }
+  }
+
+  h2 {
+    font-size: clamp(1.4rem, 3.5vw, 2rem);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    line-height: 1.35;
+    max-width: 600px;
+    margin: 0 auto;
+    color: hsl(var(--foreground));
+  }
+
+  /* ── Grid ── */
+  .grid-section {
+    padding-bottom: 3rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 1.25rem;
+  }
+
+  @media (max-width: 420px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* ── Footer ── */
+  footer {
+    padding: 2.5rem 0;
+    text-align: center;
+    border-top: 1px solid hsl(var(--border));
+    animation: fadeIn 800ms ease-out both;
+    animation-delay: 400ms;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+    color: hsl(var(--muted-foreground));
+  }
+
+  .mono {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    color: hsl(var(--foreground) / 0.8);
+  }
+
+  .separator {
+    margin: 0 0.25rem;
+    opacity: 0.4;
+  }
+</style>
