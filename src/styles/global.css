@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+  }
+
+  [data-theme="light"] {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --border: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --accent: 262 83% 58%;
+    --accent-foreground: 0 0% 100%;
+    --tag-bg: 240 4.8% 95.9%;
+    --tag-fg: 240 5.3% 34%;
+    --shadow-color: 240 6% 80%;
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --noise-opacity: 0.03;
+  }
+
+  [data-theme="dark"] {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 6% 8%;
+    --card-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --border: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --accent: 263 70% 58%;
+    --accent-foreground: 0 0% 100%;
+    --tag-bg: 240 3.7% 15.9%;
+    --tag-fg: 240 5% 74%;
+    --shadow-color: 240 10% 2%;
+    --glass-bg: rgba(10, 10, 18, 0.7);
+    --noise-opacity: 0.04;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans bg-background text-foreground min-h-dvh leading-relaxed antialiased;
+    transition: background 200ms cubic-bezier(0.4, 0, 0.2, 1),
+                color 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Noise texture overlay */
+  body::before {
+    content: "";
+    @apply fixed inset-0 z-[9999] pointer-events-none;
+    opacity: var(--noise-opacity);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 200px;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-1.5;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full;
+    background: hsl(var(--muted-foreground) / 0.3);
+  }
+}
