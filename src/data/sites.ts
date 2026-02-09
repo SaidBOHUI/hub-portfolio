@@ -59,9 +59,9 @@ export const sites: Site[] = [
 ];
 
 export const profile = {
-  name: "Ton Nom",
+  name: "Saïd Bohui",
   role: "Développeur Full Stack",
-  github: "https://github.com/username",
+  github: "https://github.com/SaidBOHUI",
   description:
     "Je construis des applications web modernes. Voici mes projets hébergés sur mon serveur — cliquez pour les explorer.",
 };
