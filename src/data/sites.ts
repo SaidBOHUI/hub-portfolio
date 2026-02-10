@@ -10,11 +10,19 @@ export interface Site {
 export const sites: Site[] = [
 	{
 		title: "Photobooth",
-		description: "Site Vitrine pour un prestataire de service de photobooth pour évènnements",
+		description: "Site Vitrine pour un prestataire de service de photobooth pour évènnements.",
 		url: "https://photobooth.sbohui.fr",
 		github: "https://github.com/SaidBOHUI/photobooth",
 		screenshot: "/screenshots/photobooth3.webp",
 		tags: ["React", "Typescript", "Tailwind"],
+	},
+	{
+		title: "Pokedex",
+		description: "Récupération d'informations sur les pokemons par API",
+		url: "https://pokedex.sbohui.fr",
+		github: "https://github.com/SaidBOHUI/pokedexV2",
+		screenshot: "/screenshots/pokedex.webp",
+		tags: ["Node.js", "Express", "PostgreSQL"],
 	},
 	{
 		title: "E-Commerce Dashboard",
@@ -23,14 +31,6 @@ export const sites: Site[] = [
 		github: "https://github.com/username/dashboard",
 		screenshot: "/screenshots/placeholder-1.svg",
 		tags: ["React", "TypeScript", "Tailwind"],
-	},
-	{
-		title: "API REST Blog",
-		description: "API RESTful avec authentification JWT, CRUD articles et commentaires.",
-		url: "https://api-blog.example.com",
-		github: "https://github.com/username/blog-api",
-		screenshot: "/screenshots/placeholder-2.svg",
-		tags: ["Node.js", "Express", "PostgreSQL"],
 	},
 	{
 		title: "Weather App",
