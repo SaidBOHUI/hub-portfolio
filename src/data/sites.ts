@@ -51,7 +51,7 @@ export const sites: Site[] = [
 		tags: ["NextJs", "Typescript", "Shadcn UI", "AWS S3"],
 	},
 	{
-		title: "Machine Learning (Pour le futur)",
+		title: "Machine Learning (projet suivant)",
 		description: "Tu dépose un image d'un chien et il te dis de quelle race il s'agit",
 		url: "https://whichdog.sbohui.fr",
 		github: "https://github.com/SaidBOHUI/whichdog",
