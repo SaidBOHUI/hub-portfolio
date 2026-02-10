@@ -53,7 +53,7 @@ export const sites: Site[] = [
     description: "Site Vitrine pour un prestataire de service de photobooth pour évènnements",
     url: "https://photobooth.sbohui.fr",
     github: "https://github.com/SaidBOHUI/photobooth",
-    screenshot: "/screenshots/placeholder-6.svg",
+    screenshot: "/screenshots/photobooth.png",
     tags: ["React", "Typescript", "Tailwind"],
   },
 ];
