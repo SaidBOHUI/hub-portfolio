@@ -17,7 +17,7 @@ export const sites: Site[] = [
 		tags: ["React", "Typescript", "Tailwind"],
 	},
 	{
-		title: "Reconnaissance de chiffre",
+		title: "Reconnaissance de chiffre (en cours de création)",
 		description: "Tu dessine un chiffre et il te dit de quel chiffre il s'agit",
 		url: "https://dashboard.example.com",
 		github: "https://github.com/SaidBOHUI/dashboard",
