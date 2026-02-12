@@ -18,7 +18,7 @@ export const sites: Site[] = [
 	},
 	{
 		title: "Reconnaissance de chiffre",
-		description: "Tu dessine un chiffre et il te dit de quel chiffre il s'agit",
+		description: "Tu dessine un chiffre et il te dit duquel il s'agit",
 		url: "https://digiteye.sbohui.fr",
 		github: "https://github.com/SaidBOHUI/digitRefonte",
 		screenshot: "/screenshots/digitR.png",
@@ -59,8 +59,8 @@ export const sites: Site[] = [
 		tags: [],
 	},
 	{
-		title: "Stay tuned",
-		description: "N'hésitez pas à me proposez des idées pour le futur 😉",
+		title: "Là où les vents nous mènent 🍃",
+		description: "N'hésitez pas à me proposez des idées pour de futurs projets 😉",
 		url: "https://photo.example.com",
 		github: "https://github.com/SaidBOHUI/photo-portfolio",
 		screenshot: "/screenshots/placeholder-4.svg",

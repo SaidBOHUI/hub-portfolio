@@ -14,5 +14,5 @@
   <rect x="260" y="100" width="500" height="170" rx="12" fill="rgba(255,255,255,0.08)"/>
   <rect x="260" y="290" width="240" height="170" rx="12" fill="rgba(255,255,255,0.08)"/>
   <rect x="520" y="290" width="240" height="170" rx="12" fill="rgba(255,255,255,0.08)"/>
-  <text x="400" y="260" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="system-ui" font-size="20" font-weight="600">Chat App</text>
+  <text x="400" y="260" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="system-ui" font-size="20" font-weight="600">Dog faces</text>
 </svg>
