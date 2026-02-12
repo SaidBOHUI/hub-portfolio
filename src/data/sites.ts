@@ -49,24 +49,24 @@ export const sites: Site[] = [
 		screenshot: "/screenshots/looquote.webp",
 		tags: ["NextJs", "Typescript", "Shadcn UI", "AWS S3"],
 	},
-	// {
-	// 	title: "Machine Learning (projet suivant)",
-	// 	description: "Tu dépose un image d'un chien et il te dis de quelle race il s'agit",
-	// 	url: "https://whichdog.sbohui.fr",
-	// 	github: "https://github.com/SaidBOHUI/whichdog",
-	// 	screenshot: "/screenshots/placeholder-5.svg",
-	// 	// tags: ["Socket.io", "React", "MongoDB"],
-	// 	tags: [],
-	// },
-	// {
-	// 	title: "Stay tuned",
-	// 	description: "N'héitez pas à me proposez des idées 😉",
-	// 	url: "https://photo.example.com",
-	// 	github: "https://github.com/SaidBOHUI/photo-portfolio",
-	// 	screenshot: "/screenshots/placeholder-4.svg",
-	// 	tags: [],
-	// 	// tags: ["Astro", "GSAP", "Markdown"],
-	// },
+	{
+		title: "Machine Learning (projet suivant)",
+		description: "Tu dépose un image d'un chien et il te dis de quelle race il s'agit",
+		url: "https://whichdog.sbohui.fr",
+		github: "https://github.com/SaidBOHUI/whichdog",
+		screenshot: "/screenshots/placeholder-5.svg",
+		// tags: ["Socket.io", "React", "MongoDB"],
+		tags: [],
+	},
+	{
+		title: "Stay tuned",
+		description: "N'hésitez pas à me proposez des idées pour le futur 😉",
+		url: "https://photo.example.com",
+		github: "https://github.com/SaidBOHUI/photo-portfolio",
+		screenshot: "/screenshots/placeholder-4.svg",
+		tags: [],
+		// tags: ["Astro", "GSAP", "Markdown"],
+	},
 ];
 
 export const profile = {
