@@ -24,7 +24,7 @@ export const sites: Site[] = [
 		url: "https://digiteye.sbohui.fr",
 		github: "https://github.com/SaidBOHUI/digitRefonte",
 		screenshot: "/screenshots/digitR.png",
-		tags: ["fastApi", "Python, TensorFlow"],
+		tags: ["fastApi", "Python", "TensorFlow"],
 		status: "online"
 	},
 	{
