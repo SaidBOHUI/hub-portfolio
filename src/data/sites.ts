@@ -5,6 +5,7 @@ export interface Site {
 	github?: string;
 	screenshot: string;
 	tags: string[];
+	status: "online" | "offline"
 }
 
 export const sites: Site[] = [
@@ -15,6 +16,7 @@ export const sites: Site[] = [
 		github: "https://github.com/SaidBOHUI/photobooth",
 		screenshot: "/screenshots/photobooth3.webp",
 		tags: ["React", "Typescript", "Tailwind"],
+		status: "online"
 	},
 	{
 		title: "Reconnaissance de chiffre",
@@ -23,6 +25,7 @@ export const sites: Site[] = [
 		github: "https://github.com/SaidBOHUI/digitRefonte",
 		screenshot: "/screenshots/digitR.png",
 		tags: ["fastApi", "Python, TensorFlow"],
+		status: "online"
 	},
 	{
 		title: "Pokedex",
@@ -31,6 +34,7 @@ export const sites: Site[] = [
 		github: "https://github.com/SaidBOHUI/pokedexV2",
 		screenshot: "/screenshots/pokedex.webp",
 		tags: ["React", "ViteJs", "Typescript"],
+		status: "online"
 	},
 	// {
 	// 	title: "E-Commerce Dashboard",
@@ -48,6 +52,7 @@ export const sites: Site[] = [
 		github: "privé car à but de commercialisation",
 		screenshot: "/screenshots/looquote.webp",
 		tags: ["NextJs", "Typescript", "Shadcn UI", "AWS S3"],
+		status: "online"
 	},
 	{
 		title: "Machine Learning (projet suivant)",
@@ -57,6 +62,7 @@ export const sites: Site[] = [
 		screenshot: "/screenshots/placeholder-5.svg",
 		// tags: ["Socket.io", "React", "MongoDB"],
 		tags: [],
+		status: "offline"
 	},
 	{
 		title: "Là où les vents nous mènent 🍃",
@@ -66,6 +72,7 @@ export const sites: Site[] = [
 		screenshot: "/screenshots/placeholder-4.svg",
 		tags: [],
 		// tags: ["Astro", "GSAP", "Markdown"],
+		status: "offline"
 	},
 ];
 
