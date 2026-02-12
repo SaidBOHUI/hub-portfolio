@@ -16,15 +16,14 @@ export const sites: Site[] = [
 		screenshot: "/screenshots/photobooth3.webp",
 		tags: ["React", "Typescript", "Tailwind"],
 	},
-	// {
-	// 	title: "Reconnaissance de chiffre (en cours de création)",
-	// 	description: "Tu dessine un chiffre et il te dit de quel chiffre il s'agit",
-	// 	url: "https://dashboard.example.com",
-	// 	github: "https://github.com/SaidBOHUI/dashboard",
-	// 	screenshot: "/screenshots/placeholder-1.svg",
-	// 	tags: ["Spark", "plotLib"],
-	// 	// tags: ["React", "TypeScript", "Tailwind"],
-	// },
+	{
+		title: "Reconnaissance de chiffre",
+		description: "Tu dessine un chiffre et il te dit de quel chiffre il s'agit",
+		url: "https://digiteye.sbohui.fr",
+		github: "https://github.com/SaidBOHUI/digitRefonte",
+		screenshot: "/screenshots/digitR.png",
+		tags: ["fastApi", "Python, TensorFlow"],
+	},
 	{
 		title: "Pokedex",
 		description: "Récupération d'informations sur les pokemons par API",
