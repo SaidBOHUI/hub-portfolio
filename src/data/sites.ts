@@ -11,7 +11,7 @@ export interface Site {
 export const sites: Site[] = [
 	{
 		title: "Photobooth",
-		description: "Site Vitrine pour un prestataire de service de photobooth pour évènnements.",
+		description: "Plateforme vitrine interactive pour un prestataire de services photobooth, conçue pour présenter les offres et faciliter la prise de contact pour des événements.",
 		url: "https://photobooth.sbohui.fr",
 		github: "https://github.com/SaidBOHUI/photobooth",
 		screenshot: "/screenshots/photobooth3.webp",
@@ -20,7 +20,7 @@ export const sites: Site[] = [
 	},
 	{
 		title: "Reconnaissance de chiffre",
-		description: "Tu dessine un chiffre et il te dit duquel il s'agit",
+		description: "Application d'intelligence artificielle permettant d'identifier des chiffres tracés à la main, mettant en avant l'intégration d'un moteur de prédiction en temps réel.",
 		url: "https://digiteye.sbohui.fr",
 		github: "https://github.com/SaidBOHUI/digitRefonte",
 		screenshot: "/screenshots/digitR.png",
@@ -29,7 +29,7 @@ export const sites: Site[] = [
 	},
 	{
 		title: "Pokedex",
-		description: "Récupération d'informations sur les pokemons par API",
+		description: "Interface d'exploration de données utilisant l'API PokeAPI, optimisée pour un affichage fluide et une recherche dynamique parmi une large base de données.",
 		url: "https://pokedex.sbohui.fr",
 		github: "https://github.com/SaidBOHUI/pokedexV2",
 		screenshot: "/screenshots/pokedex.webp",
@@ -47,17 +47,17 @@ export const sites: Site[] = [
 	{
 		title: "Gestionnaire de citations (En cours de développement)",
 		// title: "Gestionnaire de citations (En développement et privé car je compte le commercialiser)",
-		description: "Application de gestion de citations, tu peux créer ton compte, ajouter des citations et même te les représenter en portrait",
+		description: "Application de gestion de citations, tu peux créer ton compte, ajouter des citations et même les organiser dans un espace personnel sécurisé et cloud.",
 		url: "https://looquote.sbohui.fr",
 		// github: "https://github.com/SaidBOHUI/Looquote",
-		github: "privé car à but de commercialisation",
+		github: "https://github.com/SaidBOHUI/Looquote",
 		screenshot: "/screenshots/looquote.webp",
 		tags: ["NextJs", "Typescript", "Shadcn UI", "AWS S3"],
 		status: "offline"
 	},
 	{
 		title: "Machine Learning (projet suivant)",
-		description: "Tu dépose un image d'un chien et il te dis de quelle race il s'agit",
+		description: "Outil de reconnaissance visuelle capable d'identifier des races canines à partir d'images, focalisé sur le traitement de la donnée et la classification automatique.",
 		url: "https://whichdog.sbohui.fr",
 		github: "https://github.com/SaidBOHUI/whichdog",
 		screenshot: "/screenshots/placeholder-5.svg",
