@@ -52,7 +52,7 @@ export const sites: Site[] = [
 		github: "privé car à but de commercialisation",
 		screenshot: "/screenshots/looquote.webp",
 		tags: ["NextJs", "Typescript", "Shadcn UI", "AWS S3"],
-		status: "online"
+		status: "offline"
 	},
 	{
 		title: "Machine Learning (projet suivant)",
