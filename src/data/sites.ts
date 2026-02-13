@@ -45,7 +45,8 @@ export const sites: Site[] = [
 	// 	tags: ["React", "TypeScript", "Tailwind"],
 	// },
 	{
-		title: "Gestionnaire de citations (En développement et privé car je compte le commercialiser)",
+		title: "Gestionnaire de citations (En cours de développement)",
+		// title: "Gestionnaire de citations (En développement et privé car je compte le commercialiser)",
 		description: "Application de gestion de citations, tu peux créer ton compte, ajouter des citations et même te les représenter en portrait",
 		url: "https://looquote.sbohui.fr",
 		// github: "https://github.com/SaidBOHUI/Looquote",
