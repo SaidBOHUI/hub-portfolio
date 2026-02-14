@@ -82,5 +82,5 @@ export const profile = {
 	role: "Développeur Full Stack",
 	github: "https://github.com/SaidBOHUI",
 	description:
-		"Développeur fullstack passionné. Actuellement à la recherche d'une opportunité (disponible immédiatement). Voici mes projets hébergés sur mon serveur — cliquez pour les explorer.",
+		"Développeur Full Stack passionné, disponible immédiatement pour de nouvelles opportunités. Explorez mes derniers projets ci-dessous.",
 };
